@@ -1,0 +1,62 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+
+#button {
+    width: 600px;
+    margin-left: 10%;
+}
+
+#ninja {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 150px;
+    background-image: url('img/ninja.png');
+    background-size: 50px 50px;
+}
+
+#suriken {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    background-image: url('img/suriken.png');
+    background-size: 20px 20px;
+    animation: mov 1.3s infinite linear;
+}
+
+@keyframes mov {
+ 0% {
+    left: 580px;
+ }
+ 100% {
+    left: -20px;
+ }
+}
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 130px;
+    }
+    50% {
+        top: 80px;
+    }
+    80% {
+        top: 130px;
+    }
+    100% {
+        top: 150px;
+    }
+}
