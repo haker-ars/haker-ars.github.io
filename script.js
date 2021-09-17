@@ -18,6 +18,6 @@ let GameOverFalse = setInterval( function() {
     let cactusKill = parseInt(window.getComputedStyle(cactus).getPropertyValue('left'))
 
     if (cactusKill < 50 && cactusKill > 0 && dinoPlay >= 140) {
-        alert('You Ninja Are Killed!!')
+        alert('Твой ниндзя умер!!')
     }
 }, 10)
