@@ -1,23 +1,25 @@
-const dino = document.getElementById('ninja')
-const cactus = document.getElementById('suriken')
+const count = document.getElementById('count');
+const ninja = document.getElementById('ninja');
+const suriken = document.getElementById('suriken');
 
 document.addEventListener('keydown', function(event) {
     jump();
 });
 
 function jump () {
-    if (dino.classList != 'jump') {
-        dino.classList.add('jump')
+    if (ninja.classList != 'jump') {
+        ninja.classList.add('jump')
     }
     setTimeout( function() {
-        dino.classList.remove('jump')
+        ninja.classList.remove('jump')
     }, 300)
 }
 let GameOverFalse = setInterval( function() {
-    let dinoPlay = parseInt(window.getComputedStyle(dino).getPropertyValue('top'))
-    let cactusKill = parseInt(window.getComputedStyle(cactus).getPropertyValue('left'))
+    let ninjaPlay = parseInt(window.getComputedStyle(ninja).getPropertyValue('top'))
+    let surikenKill = parseInt(window.getComputedStyle(suriken).getPropertyValue('left'))
 
-    if (cactusKill < 50 && cactusKill > 0 && dinoPlay >= 140) {
-        alert('Твой ниндзя умер!!')
+    if (surikenKill < 50 && surikenKill > 0 && ninjaPlay >= 140) {
+        alert('Твой ниндзя умер!!');
+        count.innerHTML++;
     }
 }, 10)
