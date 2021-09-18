@@ -7,7 +7,12 @@
 
 #button {
     width: 600px;
+    height: 50px;
     margin-left: 10%;
+}
+
+#kills {
+    text-align: center;
 }
 
 #ninja {
