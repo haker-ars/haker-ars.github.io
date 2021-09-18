@@ -6,3 +6,6 @@ Releases:
 
 - Ninja Online v1.0
 - Ninja Online v1.1
+- Ninja Online v1.2
+
+Thank you for playing my game!
